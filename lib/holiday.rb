@@ -60,7 +60,7 @@ def all_supplies_in_holidays(holiday_hash)
         data.each { |holiday, supplies|
             holiday_caps = holiday.to_s.split(" ")
             holiday_caps.map! {|word| word.capitalize}
-            puts " #{holiday_caps.join(" ")}: #{supplies.join(", ")}"
+            puts "  #{holiday_caps.join(" ")}: #{supplies.join(", ")}"
             }
    }
 end
