@@ -1,21 +1,4 @@
 require 'pry'
-holiday_supplies = {
-  :winter => {
-    :christmas => ["Lights", "Wreath"],
-    :new_years => ["Party Hats"]
-  },
-  :summer => {
-    :fourth_of_july => ["Fireworks", "BBQ"]
-  },
-  :fall => {
-    :thanksgiving => ["Turkey"]
-  },
-  :spring => {
-    :memorial_day => ["BBQ"]
-  }
-}
-
-all_supplies_in_holidays(holiday_supplies)
 
 def second_supply_for_fourth_of_july(holiday_hash)
     holiday_supplies[:summer][:fourth_of_july][1]
@@ -80,7 +63,6 @@ def all_supplies_in_holidays(holiday_hash)
             puts " #{holiday_caps.join(" ")}: #{supplies.join(", ")}"
             }
    }
-   binding.pry
 end
 
 def all_holidays_with_bbq(holiday_hash)
